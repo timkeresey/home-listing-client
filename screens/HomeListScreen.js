@@ -1,13 +1,13 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 
+import Card from '../components/Card';
+
 const HomeListScreen = () => {
 
     return (
         <View>
-            <Text>
-                Home List Screen
-            </Text>
+           <Card />
         </View>
     )
 }

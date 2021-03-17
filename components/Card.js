@@ -8,10 +8,10 @@ const Card = () => {
                 <Text style={styles.title}>Ultra Modern Home</Text>
             </View>
             <View style={styles.imageContainer}>
-                <ImageBackground style={styles.image}>
+                <ImageBackground source={require('../assets/images/house-1.jpeg')} style={styles.image}>
                     <Text style={styles.price}>$1,000,000</Text>
-                    <View>
-                        <Text style={styles.year}>2016</Text>
+                    <View style={styles.year}>
+                        <Text style={styles.yearText}>2016</Text>
                     </View>
                 </ImageBackground>
             </View>
