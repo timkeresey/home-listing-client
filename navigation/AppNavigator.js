@@ -33,6 +33,17 @@ const stackNavigator = () => {
     )
 }
 
+const AboutStackNavigator = () => {
+    return (
+        <Stack.Navigator>
+            <Stack.Screen
+                name="About"
+                component={AboutScreen}
+            />
+        </Stack.Navigator>
+    )
+}
+
 const AppNavigator = () => {
     return (
         <NavigationContainer>
@@ -43,7 +54,7 @@ const AppNavigator = () => {
                 />
                 <Tab.Screen
                     name="About"
-                    component={AboutScreen}
+                    component={AboutStackNavigator}
                 />
             </Tab.Navigator>
         </NavigationContainer>
