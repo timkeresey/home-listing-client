@@ -54,7 +54,7 @@ const AddHomeScreen = () => {
     )
 }
 
-const styles =StyleSheet.create({
+const styles = StyleSheet.create({
     form: {
         margin: 20,
         backgroundColor: "#ffffff",
