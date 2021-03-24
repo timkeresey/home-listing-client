@@ -4,11 +4,14 @@ export const CREATE_HOUSES = 'CREATE_HOUSES';
 export const fetchHouses = () => {
     return async dispatch => {
 
-        
+        // logic that connects FE to API
+        const result = await fetch('http://localhost:3000/api/houses');
+
+        const resultData = await result.json();
 
         dispatch({
             type: FETCH_HOUSES,
-            payload: 1
-        })
+            payload: resultData
+        });
     }
 }
